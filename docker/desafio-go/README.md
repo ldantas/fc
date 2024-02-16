@@ -1,6 +1,6 @@
 # Desafio GO - FullCycle
 
-Imagem disponível no (Docker Hub)[https://hub.docker.com/r/ledantas/fullcycle]
+Imagem disponível no [Docker Hub](https://hub.docker.com/r/ledantas/fullcycle)
 
 ## Criar a imagem com o codigo fonte no host, compilador no container
 ```
