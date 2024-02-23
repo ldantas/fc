@@ -38,8 +38,16 @@ services:
             interval: 5s
             timeout: 10s
             retries: 3
-        #volumes:
-        #    - ./node:/usr/src/app
+        #mapeia o volume do host no container
+        volumes:
+            - ./node:/usr/src/app
+        # força a instalacao das dependencias e inicia o node
+        command: 
+            - /bin/sh
+            - -c 
+            - |
+                npm install
+                node index.js
         depends_on:
             mysql:
               condition: service_healthy
